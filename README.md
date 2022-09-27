@@ -4,6 +4,7 @@ https://www.cnblogs.com/web-learn/p/16590369.html
 ### 安装依赖
 - 安装scss
 yarn add sass -D
+使用vite开发，不需要像webpack那样安装loader
 
 
 - uview

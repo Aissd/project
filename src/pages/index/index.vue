@@ -8,8 +8,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const title = ref('Hello')
+  import { ref } from 'vue';
+  import { onLoad, onShow, onHide } from '@dcloudio/uni-app';
+  const title = ref('');
+
+  onLoad((options) => {
+    console.log('onLoad - options', options);
+  });
+
+  onShow(() => {
+    title.value = 'Hello world';
+  });
+
+  onHide(() => {
+    title.value = 'see you';
+  });
 </script>
 
 <style lang="scss" scoped>
